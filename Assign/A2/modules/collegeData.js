@@ -11,7 +11,7 @@ let dataCollection = null;
 
 function initialize() {
     return new Promise((resolve, reject) => {
-        fs.readFile('./data/students.json', 'utf8', (err, studentData) => {
+        fs.readFile('./Assign/A2/data/students.json', 'utf8', (err, studentData) => {
             if (err) {
                 return reject('unable to read students.json');
             }
@@ -23,7 +23,7 @@ function initialize() {
                 return reject('error parsing students.json');
             }
 
-            fs.readFile('./data/courses.json', 'utf8', (err, courseData) => {
+            fs.readFile('./Assign/A2/data/courses.json', 'utf8', (err, courseData) => {
                 if (err) {
                     return reject('unable to read courses.json');
                 }
