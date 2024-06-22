@@ -1,9 +1,34 @@
 const fs = require('fs');
+const path = require('path');
 
 class Data {
     constructor(students, courses) {
         this.students = students;
         this.courses = courses;
+    }
+
+    getStudentsByCourse(course) {
+        return new Promise((resolve, reject) => {
+            let studentsByCourse = this.students.filter(student => student.course === parseInt(course));
+
+            if (studentsByCourse.length > 0) {
+                resolve(studentsByCourse);
+            } else {
+                reject('no results returned');
+            }
+        });
+    }
+
+    getStudentByNum(num) {
+        return new Promise((resolve, reject) => {
+            let student = this.students.find(student => student.studentNum === parseInt(num));
+
+            if (student) {
+                resolve(student);
+            } else {
+                reject('no results returned');
+            }
+        });
     }
 }
 
@@ -11,7 +36,7 @@ let dataCollection = null;
 
 function initialize() {
     return new Promise((resolve, reject) => {
-        fs.readFile('./data/students.json', 'utf8', (err, studentData) => {
+        fs.readFile(path.join(process.cwd(), 'data', 'students.json'), 'utf8', (err, studentData) => {
             if (err) {
                 return reject('unable to read students.json');
             }
@@ -23,7 +48,7 @@ function initialize() {
                 return reject('error parsing students.json');
             }
 
-            fs.readFile('./data/courses.json', 'utf8', (err, courseData) => {
+            fs.readFile(path.join(process.cwd(), 'data', 'courses.json'), 'utf8', (err, courseData) => {
                 if (err) {
                     return reject('unable to read courses.json');
                 }
@@ -77,4 +102,12 @@ function getCourses() {
     });
 }
 
-module.exports = { initialize, getAllStudents, getTAs, getCourses };
+function getStudentsByCourse(course) {
+    return dataCollection.getStudentsByCourse(course);
+}
+
+function getStudentByNum(num) {
+    return dataCollection.getStudentByNum(num);
+}
+
+module.exports = { initialize, getAllStudents, getTAs, getCourses, getStudentsByCourse, getStudentByNum };
