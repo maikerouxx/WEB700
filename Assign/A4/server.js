@@ -4,7 +4,10 @@
 *  of this assignment has been copied manually or electronically from any other source 
 *  (including 3rd party web sites) or distributed to other students.
 * 
-*  Name: Michael Jo Arron Encinares Student ID: 151100237 Date: 05-July-2024
+*  Name: Michael Jo Arron Encinares Student ID: 151100237 Date: 06-July-2024
+
+*  Online (vercel) Link: https://vercel.com/new/michael-jo-arron-encinares-projects
+*
 ********************************************************************************/ 
 
 
@@ -19,6 +22,8 @@ var collegeData = require('./modules/collegeData');
 module.exports = app;
 app.use(express.static('local'));
 app.use(express.urlencoded({ extended: true }));
+app.set('views', __dirname + '/views');
+app.use(express.static(__dirname + '/public'));
 
 //Setup a 'route' to listen on the url path
 
