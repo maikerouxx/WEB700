@@ -17,7 +17,7 @@ var app = express();
 const path = require('path');
 var collegeData = require('./modules/collegeData');
 module.exports = app;
-app.use(express.static('views'))
+app.use(express.static('local'));
 
 
 //Setup a 'route' to listen on the url path
