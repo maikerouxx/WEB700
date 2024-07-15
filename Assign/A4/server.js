@@ -20,7 +20,7 @@ var app = express();
 const path = require('path');
 var collegeData = require('./modules/collegeData');
 module.exports = app;
-app.use(express.static('local'));
+//app.use(express.static('local'));
 app.use(express.urlencoded({ extended: true }));
 //app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
