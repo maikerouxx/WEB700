@@ -22,7 +22,7 @@ var collegeData = require('./modules/collegeData');
 module.exports = app;
 app.use(express.static('local'));
 app.use(express.urlencoded({ extended: true }));
-app.set('views', __dirname + '/views');
+//app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
 //Setup a 'route' to listen on the url path
