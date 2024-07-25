@@ -1,15 +1,15 @@
 {
   "version": 2,
   "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/server.js" }
-  ],
-  "static": {
-    "data": "courses",
-    "data": "students",
-    "local": "local"
-  }
+    {
+      "src": "/(.*)",
+      "dest": "/app.js"
+    }
+  ]
 }
-

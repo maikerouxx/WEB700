@@ -9,6 +9,7 @@ const app = express();
 app.use('/data', express.static(path.join(__dirname, 'data')));
 app.use('/local', express.static(path.join(__dirname, 'local')));
 app.use(express.urlencoded({ extended: true }));
+
 // Configure Handlebars
 const hbs = exphbs.create({
     extname: '.hbs',
