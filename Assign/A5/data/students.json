@@ -240,7 +240,7 @@
     "course": 1
   },
   {
-    "studentNum": "21",
+    "studentNum": 21,
     "firstName": "Rozalie",
     "lastName": "Droner",
     "email": "rdronk@mySeneca.ca",
@@ -252,7 +252,7 @@
     "course": "6"
   },
   {
-    "studentNum": "22",
+    "studentNum": 22,
     "firstName": "Ellette",
     "lastName": "Embys",
     "email": "eembyl@mySeneca.ca",
@@ -264,7 +264,7 @@
     "course": "4"
   },
   {
-    "studentNum": "23",
+    "studentNum": 23,
     "firstName": "Marquita",
     "lastName": "Garattys",
     "email": "mgarattym@mySeneca.ca",
@@ -410,14 +410,14 @@
   {
     "studentNum": 35,
     "firstName": "Brocky",
-    "lastName": "Demer",
+    "lastName": "Demers",
     "email": "bdemer4@mySeneca.ca",
     "addressStreet": "3559 School Park",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": false,
     "status": "Part Time",
-    "course": 2
+    "course": "2"
   },
   {
     "studentNum": 36,

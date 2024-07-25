@@ -63,29 +63,34 @@ class Data {
         });
     }
 
-    updateStudent(updatedStudent) {
+    updateStudent(studentData) {
         return new Promise((resolve, reject) => {
-            let studentIndex = this.students.findIndex(student => student.studentNum === parseInt(updatedStudent.studentNum));
+            let studentIndex = this.students.findIndex(student => student.studentNum === parseInt(studentData.studentNum));
 
-            if (studentIndex !== -1) {
-                // Handle the "TA" checkbox
-                updatedStudent.TA = !!updatedStudent.TA;
-                this.students[studentIndex] = updatedStudent;
-
-                fs.writeFile(path.join(process.cwd(), 'data', 'students.json'), JSON.stringify(this.students, null, 2), (err) => {
-                    if (err) {
-                        console.error('Error writing to students.json:', err);
-                        reject('unable to write to students.json');
-                    } else {
-                        resolve();
-                    }
-                });
-            } else {
-                reject('student not found');
+            if (studentIndex === -1) {
+                return reject('Student not found');
             }
+
+            // Update the student with the new data
+            this.students[studentIndex] = {
+                ...this.students[studentIndex],
+                ...studentData,
+                studentNum: parseInt(studentData.studentNum), // Ensure studentNum is kept as a number
+                TA: studentData.TA === "on" ? true : false // Handle checkbox data
+            };
+
+            fs.writeFile(path.join(process.cwd(), 'data', 'students.json'), JSON.stringify(this.students, null, 2), (err) => {
+                if (err) {
+                    console.error('Error writing to students.json:', err);
+                    reject('Unable to write to students.json');
+                } else {
+                    resolve();
+                }
+            });
         });
     }
 }
+
     
 
 let dataCollection = null;

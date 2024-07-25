@@ -3,7 +3,6 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const collegeData = require('./modules/collegeData');
-
 const app = express();
 
 // Serve static files from the public directory
@@ -71,14 +70,15 @@ app.get("/student/:studentNum", async (req, res) => {
     }
 });
 
-app.post('/student/update', async (req, res) => {
-    try {
-        await collegeData.updateStudent(req.body);
-        res.redirect('/students');
-    } catch (error) {
-        console.error('Error updating student:', error);
-        res.status(500).send('Error updating student');
-    }
+app.post('/student/update', (req, res) => {
+    collegeData.updateStudent(req.body)
+        .then(() => {
+            res.redirect('/students');
+        })
+        .catch((error) => {
+            console.error('Error updating student:', error);
+            res.status(500).send('Error updating student');
+        });
 });
 
 app.get('/', (req, res) => res.render('home'));
