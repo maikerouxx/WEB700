@@ -5,28 +5,9 @@ const path = require('path');
 const collegeData = require('./modules/collegeData');
 
 const app = express();
-const fs = require('fs').promises;
-
-app.get('/api/courses', async (req, res) => {
-    try {
-        const data = await fs.readFile(path.join(__dirname, 'data', 'course.json'), 'utf8');
-        res.json(JSON.parse(data));
-    } catch (error) {
-        res.status(500).send('Error reading JSON file');
-    }
-});
-
-app.get('/api/students', async (req, res) => {
-    try {
-        const data = await fs.readFile(path.join(__dirname, 'data', 'student.json'), 'utf8');
-        res.json(JSON.parse(data));
-    } catch (error) {
-        res.status(500).send('Error reading JSON file');
-    }
-});
 
 // Serve static files from the public directory
-app.use('/data', express.static(path.join(__dirname, 'data')));
+app.use(express.static(path.join(__dirname, 'data')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'local')));
 // Configure Handlebars
