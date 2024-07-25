@@ -252,28 +252,28 @@
     "course": "6"
   },
   {
-    "studentNum": 22,
+    "studentNum": "22",
     "firstName": "Ellette",
-    "lastName": "Emby",
+    "lastName": "Embys",
     "email": "eembyl@mySeneca.ca",
     "addressStreet": "0615 Mayer Parkway",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": 4
+    "course": "4"
   },
   {
-    "studentNum": 23,
+    "studentNum": "23",
     "firstName": "Marquita",
-    "lastName": "Garatty",
+    "lastName": "Garattys",
     "email": "mgarattym@mySeneca.ca",
     "addressStreet": "3955 Hoard Way",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": 3
+    "course": "3"
   },
   {
     "studentNum": 24,
