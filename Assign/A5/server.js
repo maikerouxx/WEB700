@@ -3,6 +3,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const app = express();
+const { initialize } = require("./modules/collegeData");
 const collegeData = require('./modules/collegeData');
 
 // Serve static files from the public directory
