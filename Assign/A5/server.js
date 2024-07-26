@@ -3,7 +3,6 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const app = express();
-const { initialize } = require("./modules/collegeData");
 const collegeData = require('./modules/collegeData');
 
 // Serve static files from the public directory
@@ -24,6 +23,7 @@ const hbs = exphbs.create({
 
 app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
+app.set(express.static('public'));
 app.set(express.static(__dirname + "/public/"));
 app.set('views', path.join(__dirname, 'views'));
 
