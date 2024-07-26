@@ -2,8 +2,9 @@ const HTTP_PORT = process.env.PORT || 8080;
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
-const collegeData = require('./modules/collegeData');
 const app = express();
+const { initialize } = require("./modules/collegeData");
+const collegeData = require('./modules/collegeData');
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'local')));
