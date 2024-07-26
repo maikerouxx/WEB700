@@ -7,8 +7,11 @@ const { initialize } = require("./modules/collegeData");
 const collegeData = require('./modules/collegeData');
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'local')));
-app.use(express.urlencoded({ extended: true }));
+//app.use(express.static(path.join(__dirname, 'local')));
+//app.use(express.urlencoded({ extended: true }));
+app.set(express.static('public'));
+app.set(express.static(__dirname + "/public/"));
+app.set('views', path.join(__dirname, 'views'));
 
 // Configure Handlebars
 const hbs = exphbs.create({
@@ -24,9 +27,7 @@ const hbs = exphbs.create({
 
 app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
-app.set(express.static('public'));
-app.set(express.static(__dirname + "/public/"));
-app.set('views', path.join(__dirname, 'views'));
+
 
 // Middleware for setting the active route
 app.use((req, res, next) => {
