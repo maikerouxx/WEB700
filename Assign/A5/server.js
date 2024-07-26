@@ -6,9 +6,7 @@ const collegeData = require('./modules/collegeData');
 const app = express();
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'data')));
 app.use(express.static(path.join(__dirname, 'local')));
-app.use(express.static(path.join(__dirname, 'A5')));
 app.use(express.urlencoded({ extended: true }));
 
 // Configure Handlebars
@@ -25,6 +23,7 @@ const hbs = exphbs.create({
 
 app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
+app.set(express.static(__dirname + "/public/"));
 app.set('views', path.join(__dirname, 'views'));
 
 // Middleware for setting the active route
