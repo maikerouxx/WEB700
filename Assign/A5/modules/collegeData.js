@@ -34,7 +34,13 @@ class Data {
             studentData.TA = studentData.TA ? true : false;
             studentData.studentNum = this.students.length + 1;
             this.students.push(studentData);
-            resolve(); // Resolve without writing to file since Vercel is read-only at runtime
+            fs.writeFile(path.join(__dirname, '../data', 'students.json'), JSON.stringify(this.students, null, 2), (err) => {
+                if (err) {
+                    reject('unable to write to students.json');
+                } else {
+                    resolve();
+                }
+            });
         });
     }
 
@@ -61,7 +67,13 @@ class Data {
                 studentNum: parseInt(studentData.studentNum),
                 TA: studentData.TA === "on" ? true : false
             };
-            resolve(); // Resolve without writing to file since Vercel is read-only at runtime
+            fs.writeFile(path.join(__dirname, '../data', 'students.json'), JSON.stringify(this.students, null, 2), (err) => {
+                if (err) {
+                    reject('Unable to write to students.json');
+                } else {
+                    resolve();
+                }
+            });
         });
     }
 }
@@ -70,24 +82,32 @@ let dataCollection = null;
 
 function initialize() {
     return new Promise((resolve, reject) => {
-        fs.readFile(path.join(__dirname, '..', 'data', 'students.json'), 'utf8', (err, studentData) => {
+        const studentFilePath = path.join(__dirname, '../data', 'students.json');
+        const courseFilePath = path.join(__dirname, '../data', 'courses.json');
+        console.log(`Reading students from ${studentFilePath}`);
+        console.log(`Reading courses from ${courseFilePath}`);
+        fs.readFile(studentFilePath, 'utf8', (err, studentData) => {
             if (err) {
+                console.error('Error reading students.json:', err);
                 return reject('unable to read students.json');
             }
             let students;
             try {
                 students = JSON.parse(studentData);
             } catch (e) {
+                console.error('Error parsing students.json:', e);
                 return reject('error parsing students.json');
             }
-            fs.readFile(path.join(__dirname, '..', 'data', 'courses.json'), 'utf8', (err, courseData) => {
+            fs.readFile(courseFilePath, 'utf8', (err, courseData) => {
                 if (err) {
+                    console.error('Error reading courses.json:', err);
                     return reject('unable to read courses.json');
                 }
                 let courses;
                 try {
                     courses = JSON.parse(courseData);
                 } catch (e) {
+                    console.error('Error parsing courses.json:', e);
                     return reject('error parsing courses.json');
                 }
                 dataCollection = new Data(students, courses);

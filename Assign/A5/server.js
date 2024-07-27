@@ -6,7 +6,6 @@ const app = express();
 const collegeData = require('./modules/collegeData');
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'local')));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
@@ -38,7 +37,8 @@ app.get('/students', async (req, res) => {
     try {
         const data = await collegeData.getAllStudents();
         res.render('students', data.length > 0 ? { students: data } : { message: 'no results' });
-    } catch {
+    } catch (error) {
+        console.error('Error getting students:', error);
         res.render('students', { message: 'no results' });
     }
 });
@@ -47,7 +47,8 @@ app.get('/courses', async (req, res) => {
     try {
         const data = await collegeData.getCourses();
         res.render('courses', data.length > 0 ? { courses: data } : { message: 'no results' });
-    } catch {
+    } catch (error) {
+        console.error('Error getting courses:', error);
         res.render('courses', { message: 'no results' });
     }
 });
@@ -57,6 +58,7 @@ app.get('/course/:id', async (req, res) => {
         const course = await collegeData.getCourseById(req.params.id);
         res.render('course', { course });
     } catch (error) {
+        console.error('Error getting course by ID:', error);
         res.render('course', { message: error });
     }
 });
@@ -67,6 +69,7 @@ app.get("/student/:studentNum", async (req, res) => {
         const courses = await collegeData.getCourses();
         res.render("student", { student, courses });
     } catch (error) {
+        console.error('Error getting student by number:', error);
         res.status(404).send("Student not found");
     }
 });
@@ -91,7 +94,8 @@ app.get('/students/data', async (req, res) => {
     try {
         const students = await collegeData.getAllStudents();
         res.json(students);
-    } catch {
+    } catch (error) {
+        console.error('Error getting student data:', error);
         res.json({ message: "no results" });
     }
 });
