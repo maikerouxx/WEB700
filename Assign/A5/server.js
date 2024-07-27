@@ -19,10 +19,10 @@ const app = express();
 const collegeData = require('./modules/collegeData');
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'local')));
+app.use(express.static(path.join(process.cwd(), 'local')));
 app.set(express.static('public'));
-app.set(express.static(process.cwd() + "/public/"));
-app.set('views', path.join(__dirname, 'views'));
+app.set(express.static(__dirname + "/public/"));
+app.set('views', path.join(process.cwd(), 'views'));
 app.use(express.urlencoded({ extended: true }));
 
 // Configure Handlebars
