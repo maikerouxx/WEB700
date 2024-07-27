@@ -6,6 +6,7 @@ const app = express();
 const collegeData = require('./modules/collegeData');
 
 // Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'local')));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
