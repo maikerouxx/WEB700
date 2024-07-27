@@ -1,17 +1,29 @@
+/*********************************************************************************
+*  WEB700 – Assignment 05
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  No part 
+*  of this assignment has been copied manually or electronically from any other source 
+*  (including 3rd party web sites) or distributed to other students.
+* 
+*  Name: Michael Jo Arron Encinares Student ID: 151100237 Date: July 26 2024
+*
+*  Online (vercel) Link: https://vercel.com/michael-jo-arron-encinares-projects
+*
+********************************************************************************/ 
+
+
 const HTTP_PORT = process.env.PORT || 8080;
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const app = express();
-const { initialize } = require("./modules/collegeData");
 const collegeData = require('./modules/collegeData');
 
 // Serve static files from the public directory
-//app.use(express.static(path.join(__dirname, 'local')));
-//app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'local')));
 app.set(express.static('public'));
 app.set(express.static(__dirname + "/public/"));
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.urlencoded({ extended: true }));
 
 // Configure Handlebars
 const hbs = exphbs.create({
@@ -89,6 +101,7 @@ app.get('/', (req, res) => res.render('home'));
 app.get('/about', (req, res) => res.render('about'));
 app.get('/htmlDemo', (req, res) => res.render('htmlDemo'));
 app.get('/students/add', (req, res) => res.render('addStudent'));
+
 app.get('/students/data', async (req, res) => {
     try {
         const students = await collegeData.getAllStudents();

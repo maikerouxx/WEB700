@@ -9,7 +9,7 @@
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": 2
+    "course": "8"
   },
   {
     "studentNum": 2,
@@ -33,19 +33,19 @@
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": 2
+    "course": "1"
   },
   {
     "studentNum": 4,
     "firstName": "Asia",
-    "lastName": "Bollon",
+    "lastName": "Bollons",
     "email": "abollon3@mySeneca.ca",
     "addressStreet": "0464 Mitchell Road",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": 4
+    "course": "4"
   },
   {
     "studentNum": 5,
@@ -81,7 +81,7 @@
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": 6
+    "course": "5"
   },
   {
     "studentNum": 8,
@@ -213,7 +213,7 @@
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": 5
+    "course": "10"
   },
   {
     "studentNum": 19,
@@ -290,14 +290,14 @@
   {
     "studentNum": 25,
     "firstName": "Garrott",
-    "lastName": "Turnor",
+    "lastName": "Turnors",
     "email": "gturnoro@mySeneca.ca",
     "addressStreet": "32700 Sunfield Park",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": 2
+    "course": "1"
   },
   {
     "studentNum": 26,
@@ -3335,5 +3335,41 @@
     "course": "1",
     "TA": false,
     "studentNum": 279
+  },
+  {
+    "firstName": "Michael Jo Arron",
+    "lastName": "Encinaresss",
+    "email": "mjaencinares@myseneca.ca",
+    "addressStreet": "51",
+    "addressCity": "G",
+    "addressProvince": "ON",
+    "status": "Full Time",
+    "course": "1",
+    "TA": false,
+    "studentNum": 280
+  },
+  {
+    "firstName": "Mike",
+    "lastName": "Jordan",
+    "email": "mjordan@gmail.com",
+    "addressStreet": "5151",
+    "addressCity": "VG",
+    "addressProvince": "ON",
+    "status": "Full Time",
+    "course": "10",
+    "TA": true,
+    "studentNum": 281
+  },
+  {
+    "firstName": "Mike",
+    "lastName": "Droner",
+    "email": "mjordan@gmail.coms",
+    "addressStreet": "41",
+    "addressCity": "VVG",
+    "addressProvince": "ON",
+    "status": "Full Time",
+    "course": "1",
+    "TA": false,
+    "studentNum": 282
   }
 ]
