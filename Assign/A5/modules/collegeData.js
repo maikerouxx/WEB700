@@ -31,25 +31,15 @@ class Data {
         });
     }
 
-
     addStudent(studentData) {
         return new Promise((resolve, reject) => {
             studentData.TA = studentData.TA ? true : false;
             studentData.studentNum = this.students.length + 1;
             console.log('Adding student:', studentData);
             this.students.push(studentData);
-    
-            fs.writeFile(path.join(process.cwd(), 'data', 'students.json'), JSON.stringify(this.students, null, 2), (err) => {
-                if (err) {
-                    console.error('Error writing to students.json:', err);
-                    reject('unable to write to students.json');
-                } else {
-                    resolve();
-                }
-            });
+            resolve(); // Resolve without writing to file since Vercel is read-only at runtime
         });
     }
-
 
     getCourseById(id) {
         return new Promise((resolve, reject) => {
@@ -58,7 +48,7 @@ class Data {
             if (course) {
                 resolve(course);
             } else {
-            reject('query returned 0 results');
+                reject('query returned 0 results');
             }
         });
     }
@@ -79,25 +69,16 @@ class Data {
                 TA: studentData.TA === "on" ? true : false // Handle checkbox data
             };
 
-            fs.writeFile(path.join(process.cwd(), 'data', 'students.json'), JSON.stringify(this.students, null, 2), (err) => {
-                if (err) {
-                    console.error('Error writing to students.json:', err);
-                    reject('Unable to write to students.json');
-                } else {
-                    resolve();
-                }
-            });
+            resolve(); // Resolve without writing to file since Vercel is read-only at runtime
         });
     }
 }
-
-    
 
 let dataCollection = null;
 
 function initialize() {
     return new Promise((resolve, reject) => {
-        fs.readFile(path.join(process.cwd(), 'data', 'students.json'), 'utf8', (err, studentData) => {
+        fs.readFile(path.join(__dirname, '../data/students.json'), 'utf8', (err, studentData) => {
             if (err) {
                 return reject('unable to read students.json');
             }
@@ -109,7 +90,7 @@ function initialize() {
                 return reject('error parsing students.json');
             }
 
-            fs.readFile(path.join(process.cwd(), 'data', 'courses.json'), 'utf8', (err, courseData) => {
+            fs.readFile(path.join(__dirname, '../data/courses.json'), 'utf8', (err, courseData) => {
                 if (err) {
                     return reject('unable to read courses.json');
                 }
@@ -138,7 +119,6 @@ function getAllStudents() {
     });
 }
 
-
 function getCourses() {
     return new Promise((resolve, reject) => {
         if (dataCollection && dataCollection.courses && dataCollection.courses.length > 0) {
@@ -165,10 +145,8 @@ function getCourseById(id) {
     return dataCollection.getCourseById(id);
 }
 
-function updateStudent(updatedStudent){
-    return dataCollection.updateStudent(updatedStudent)
+function updateStudent(updatedStudent) {
+    return dataCollection.updateStudent(updatedStudent);
 }
 
-
-
-module.exports = { initialize, getAllStudents, getCourses, getStudentsByCourse, getStudentByNum, addStudent, getCourseById, updateStudent};
+module.exports = { initialize, getAllStudents, getCourses, getStudentsByCourse, getStudentByNum, addStudent, getCourseById, updateStudent };
