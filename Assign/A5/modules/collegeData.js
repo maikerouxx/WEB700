@@ -10,7 +10,6 @@ class Data {
     getStudentsByCourse(course) {
         return new Promise((resolve, reject) => {
             let studentsByCourse = this.students.filter(student => student.course === parseInt(course));
-
             if (studentsByCourse.length > 0) {
                 resolve(studentsByCourse);
             } else {
@@ -22,7 +21,6 @@ class Data {
     getStudentByNum(num) {
         return new Promise((resolve, reject) => {
             let student = this.students.find(student => student.studentNum === parseInt(num));
-
             if (student) {
                 resolve(student);
             } else {
@@ -35,7 +33,6 @@ class Data {
         return new Promise((resolve, reject) => {
             studentData.TA = studentData.TA ? true : false;
             studentData.studentNum = this.students.length + 1;
-            console.log('Adding student:', studentData);
             this.students.push(studentData);
             resolve(); // Resolve without writing to file since Vercel is read-only at runtime
         });
@@ -44,7 +41,6 @@ class Data {
     getCourseById(id) {
         return new Promise((resolve, reject) => {
             let course = this.courses.find(course => course.courseId === parseInt(id));
-
             if (course) {
                 resolve(course);
             } else {
@@ -56,19 +52,15 @@ class Data {
     updateStudent(studentData) {
         return new Promise((resolve, reject) => {
             let studentIndex = this.students.findIndex(student => student.studentNum === parseInt(studentData.studentNum));
-
             if (studentIndex === -1) {
                 return reject('Student not found');
             }
-
-            // Update the student with the new data
             this.students[studentIndex] = {
                 ...this.students[studentIndex],
                 ...studentData,
-                studentNum: parseInt(studentData.studentNum), // Ensure studentNum is kept as a number
-                TA: studentData.TA === "on" ? true : false // Handle checkbox data
+                studentNum: parseInt(studentData.studentNum),
+                TA: studentData.TA === "on" ? true : false
             };
-
             resolve(); // Resolve without writing to file since Vercel is read-only at runtime
         });
     }
@@ -78,30 +70,26 @@ let dataCollection = null;
 
 function initialize() {
     return new Promise((resolve, reject) => {
-        fs.readFile(path.join(__dirname, '../data/students.json'), 'utf8', (err, studentData) => {
+        fs.readFile(path.join(__dirname, '..', 'data', 'students.json'), 'utf8', (err, studentData) => {
             if (err) {
                 return reject('unable to read students.json');
             }
-
             let students;
             try {
                 students = JSON.parse(studentData);
             } catch (e) {
                 return reject('error parsing students.json');
             }
-
-            fs.readFile(path.join(__dirname, '../data/courses.json'), 'utf8', (err, courseData) => {
+            fs.readFile(path.join(__dirname, '..', 'data', 'courses.json'), 'utf8', (err, courseData) => {
                 if (err) {
                     return reject('unable to read courses.json');
                 }
-
                 let courses;
                 try {
                     courses = JSON.parse(courseData);
                 } catch (e) {
                     return reject('error parsing courses.json');
                 }
-
                 dataCollection = new Data(students, courses);
                 resolve();
             });

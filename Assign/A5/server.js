@@ -1,16 +1,3 @@
-/*********************************************************************************
-*  WEB700 – Assignment 05
-*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  No part 
-*  of this assignment has been copied manually or electronically from any other source 
-*  (including 3rd party web sites) or distributed to other students.
-* 
-*  Name: Michael Jo Arron Encinares Student ID: 151100237 Date: July 26 2024
-*
-*  Online (vercel) Link: https://vercel.com/michael-jo-arron-encinares-projects
-*
-********************************************************************************/ 
-
-
 const HTTP_PORT = process.env.PORT || 8080;
 const express = require('express');
 const exphbs = require('express-handlebars');
@@ -38,7 +25,6 @@ const hbs = exphbs.create({
 
 app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
-
 
 // Middleware for setting the active route
 app.use((req, res, next) => {
