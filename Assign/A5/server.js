@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const app = express();
 const collegeData = require('./modules/collegeData');
+const { body, validationResult } = require('express-validator');
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'local')));
@@ -36,13 +37,22 @@ app.use((req, res, next) => {
 // Routes
 app.get('/students', async (req, res) => {
     try {
-        const data = await collegeData.getAllStudents();
-        res.render('students', data.length > 0 ? { students: data } : { message: 'no results' });
+        const course = req.query.course;
+        let students;
+
+        if (course) {
+            students = await collegeData.getStudentsByCourse(course);
+        } else {
+            students = await collegeData.getAllStudents();
+        }
+
+        res.render('students', students.length > 0 ? { students } : { message: 'no results' });
     } catch (error) {
         console.error('Error getting students:', error);
         res.render('students', { message: 'no results' });
     }
 });
+
 
 app.get('/courses', async (req, res) => {
     try {
@@ -76,7 +86,15 @@ app.get("/student/:studentNum", async (req, res) => {
 });
 
 app.post('/student/update', (req, res) => {
-    collegeData.updateStudent(req.body)
+    console.log('Received data:', req.body);  // Debugging line
+
+    // Ensure `course` is an integer
+    const updatedStudentData = {
+        ...req.body,
+        course: parseInt(req.body.course, 10) // Convert course to integer
+    };
+
+    collegeData.updateStudent(updatedStudentData)
         .then(() => {
             res.redirect('/students');
         })
@@ -91,25 +109,32 @@ app.get('/about', (req, res) => res.render('about'));
 app.get('/htmlDemo', (req, res) => res.render('htmlDemo'));
 app.get('/students/add', (req, res) => res.render('addStudent'));
 
-app.get('/students/data', async (req, res) => {
-    try {
-        const students = await collegeData.getAllStudents();
-        res.json(students);
-    } catch (error) {
-        console.error('Error getting student data:', error);
-        res.json({ message: "no results" });
-    }
-});
 
-app.post('/students/add', async (req, res) => {
-    try {
-        await collegeData.addStudent(req.body);
-        res.redirect('/students');
-    } catch (err) {
-        console.error('Error adding student:', err);
-        res.status(500).send('Error adding student: ' + err);
+app.post('/students/add',
+    [
+        body('course').isInt({ min: 1 }).withMessage('Course must be a valid number')
+        // Add other validation rules as needed
+    ],
+    async (req, res) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
+        }
+
+        try {
+            const studentData = {
+                ...req.body,
+                course: parseInt(req.body.course, 10)
+            };
+
+            await collegeData.addStudent(studentData);
+            res.redirect('/students');
+        } catch (err) {
+            console.error('Error adding student:', err);
+            res.status(500).send('Error adding student: ' + err);
+        }
     }
-});
+);
 
 // Handle 404
 app.use((req, res) => res.status(404).send('Page Not Found'));

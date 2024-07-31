@@ -9,7 +9,7 @@
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "8"
+    "course": 2
   },
   {
     "studentNum": 2,
@@ -33,19 +33,19 @@
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "1"
+    "course": 2
   },
   {
     "studentNum": 4,
     "firstName": "Asia",
-    "lastName": "Bollons",
+    "lastName": "Bollon",
     "email": "abollon3@mySeneca.ca",
     "addressStreet": "0464 Mitchell Road",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "4"
+    "course": 4
   },
   {
     "studentNum": 5,
@@ -81,7 +81,7 @@
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "5"
+    "course": 6
   },
   {
     "studentNum": 8,
@@ -213,7 +213,7 @@
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "10"
+    "course": 5
   },
   {
     "studentNum": 19,
@@ -242,38 +242,38 @@
   {
     "studentNum": 21,
     "firstName": "Rozalie",
-    "lastName": "Droner",
+    "lastName": "Dron",
     "email": "rdronk@mySeneca.ca",
     "addressStreet": "29843 Luster Terrace",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "6"
+    "course": 6
   },
   {
     "studentNum": 22,
     "firstName": "Ellette",
-    "lastName": "Embys",
+    "lastName": "Emby",
     "email": "eembyl@mySeneca.ca",
     "addressStreet": "0615 Mayer Parkway",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "4"
+    "course": 4
   },
   {
     "studentNum": 23,
     "firstName": "Marquita",
-    "lastName": "Garattys",
+    "lastName": "Garatty",
     "email": "mgarattym@mySeneca.ca",
     "addressStreet": "3955 Hoard Way",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "3"
+    "course": 3
   },
   {
     "studentNum": 24,
@@ -290,14 +290,14 @@
   {
     "studentNum": 25,
     "firstName": "Garrott",
-    "lastName": "Turnors",
+    "lastName": "Turnor",
     "email": "gturnoro@mySeneca.ca",
     "addressStreet": "32700 Sunfield Park",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": true,
     "status": "Full Time",
-    "course": "1"
+    "course": 2
   },
   {
     "studentNum": 26,
@@ -410,14 +410,14 @@
   {
     "studentNum": 35,
     "firstName": "Brocky",
-    "lastName": "Demers",
+    "lastName": "Demer",
     "email": "bdemer4@mySeneca.ca",
     "addressStreet": "3559 School Park",
     "addressCity": "Toronto",
     "addressProvince": "ON",
     "TA": false,
     "status": "Part Time",
-    "course": "2"
+    "course": 2
   },
   {
     "studentNum": 36,
@@ -3117,259 +3117,18 @@
     "addressProvince": "ON",
     "TA": false,
     "status": "Part Time",
-    "course": 5
-  },
-  {
-    "TA": false,
-    "studentNum": 261
-  },
-  {
-    "TA": false,
-    "studentNum": 262
-  },
-  {
-    "firstName": "Michael",
-    "lastName": "Encinares",
-    "email": "maikeroux@gmail.com",
-    "addressStreet": "51",
-    "addressCity": "Vaughan",
-    "addressProvince": "ON",
-    "course": "7",
-    "TA": false,
-    "studentNum": 263
-  },
-  {
-    "firstName": "Leah",
-    "lastName": "Baldo",
-    "email": "leah@gmail.com",
-    "addressStreet": "143",
-    "addressCity": "Vaug",
-    "addressProvince": "ON",
-    "status": "Full Time",
-    "course": "11",
-    "TA": false,
-    "studentNum": 264
-  },
-  {
-    "firstName": "Marika",
-    "lastName": "Radahn",
-    "email": "marika@gmail.com",
-    "addressStreet": "541",
-    "addressCity": "Elden",
-    "addressProvince": "BC",
-    "status": "Part Time",
-    "course": "6",
-    "TA": false,
-    "studentNum": 265
-  },
-  {
-    "firstName": "qwer",
-    "lastName": "tyuiop",
-    "email": "asdas@gmail.com",
-    "addressStreet": "512",
-    "addressCity": "dasd",
-    "addressProvince": "fasd",
-    "status": "Full Time",
-    "course": "7",
-    "TA": false,
-    "studentNum": 266
-  },
-  {
-    "firstName": "asd",
-    "lastName": "fasd",
-    "email": "fasd@asd",
-    "addressStreet": "gasdf",
-    "addressCity": "asd",
-    "addressProvince": "fasd",
-    "'status": "on",
-    "status": "Full Time",
-    "course": "6",
-    "TA": false,
-    "studentNum": 267
-  },
-  {
-    "firstName": "asdfasdf",
-    "lastName": "fasd",
-    "email": "fasd@asdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asd",
-    "addressProvince": "fasd",
-    "'status": "on",
-    "status": "Full Time",
-    "course": "5",
-    "TA": false,
-    "studentNum": 268
-  },
-  {
-    "firstName": "asdfasdffasdfasd",
-    "lastName": "fasd",
-    "email": "fasd@asdfasdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asdafsasd",
-    "addressProvince": "fasd",
-    "status": "Full Time",
-    "course": "5",
-    "TA": false,
-    "studentNum": 269
-  },
-  {
-    "firstName": "asdfasdffasdfasd12123",
-    "lastName": "fasd",
-    "email": "fasd@asdfasdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asdafsasd",
-    "addressProvince": "fasd",
-    "'status": "on",
-    "status": "Full Time",
-    "course": "5",
-    "TA": false,
-    "studentNum": 270
-  },
-  {
-    "firstName": "asdfasdffasdfasd121234123",
-    "lastName": "fasd",
-    "email": "fasd@asdfasdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asdafsasd",
-    "addressProvince": "fasd",
-    "'status": "on",
-    "status": "Full Time",
-    "course": "5",
-    "TA": false,
-    "studentNum": 271
-  },
-  {
-    "firstName": "asdfasdffasdfasd121234123fa",
-    "lastName": "fasd",
-    "email": "fasd@asdfasdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asdafsasd",
-    "addressProvince": "fasd",
-    "status": "Full Time",
-    "course": "5",
-    "TA": false,
-    "studentNum": 272
-  },
-  {
-    "firstName": "asdfasdffasdfasd121234123fad",
-    "lastName": "fasd",
-    "email": "fasd@asdfasdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asdafsasd",
-    "addressProvince": "fasd",
-    "'status": "on",
-    "status": "Full Time",
-    "course": "5",
-    "TA": false,
-    "studentNum": 273
-  },
-  {
-    "firstName": "asdfasdffasdfasd121234123fadda",
-    "lastName": "fasd",
-    "email": "fasd@asdfasdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asdafsasd",
-    "addressProvince": "fasd",
-    "'status": "on",
-    "status": "Part Time",
-    "course": "8",
-    "TA": false,
-    "studentNum": 274
-  },
-  {
-    "firstName": "asdfasdffasdfasd121234123faddafa",
-    "lastName": "fasd",
-    "email": "fasd@asdfasdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asdafsasd",
-    "addressProvince": "fasd",
-    "'status": "on",
-    "status": "Part Time",
-    "course": "8",
-    "TA": false,
-    "studentNum": 275
-  },
-  {
-    "firstName": "asdfasdffasdfasd121234123faddafaad",
-    "lastName": "fasd",
-    "email": "fasd@asdfasdfasd",
-    "addressStreet": "gasdfasd",
-    "addressCity": "asdafsasd",
-    "addressProvince": "fasd",
-    "'status": "on",
-    "status": "Full Time",
-    "course": "8",
-    "TA": false,
-    "studentNum": 276
-  },
-  {
-    "firstName": "asdf",
-    "lastName": "qwer",
-    "email": "qwer@qwer",
-    "addressStreet": "qwe",
-    "addressCity": "eqwe",
-    "addressProvince": "asd",
-    "TA": true,
-    "status": "Full Time",
-    "course": "5",
-    "studentNum": 277
-  },
-  {
-    "firstName": "",
-    "lastName": "",
-    "email": "",
-    "addressStreet": "",
-    "addressCity": "",
-    "addressProvince": "",
-    "course": "1",
-    "TA": false,
-    "studentNum": 278
-  },
-  {
-    "firstName": "",
-    "lastName": "",
-    "email": "",
-    "addressStreet": "",
-    "addressCity": "",
-    "addressProvince": "",
-    "course": "1",
-    "TA": false,
-    "studentNum": 279
+    "course": 6
   },
   {
     "firstName": "Michael Jo Arron",
-    "lastName": "Encinaresss",
-    "email": "mjaencinares@myseneca.ca",
+    "lastName": "Encinares",
+    "email": "maikerouxx@gmail.com",
     "addressStreet": "51",
-    "addressCity": "G",
-    "addressProvince": "ON",
-    "status": "Full Time",
-    "course": "1",
-    "TA": false,
-    "studentNum": 280
-  },
-  {
-    "firstName": "Mike",
-    "lastName": "Jordan",
-    "email": "mjordan@gmail.com",
-    "addressStreet": "5151",
     "addressCity": "VG",
     "addressProvince": "ON",
     "status": "Full Time",
-    "course": "10",
-    "TA": true,
-    "studentNum": 281
-  },
-  {
-    "firstName": "Mike",
-    "lastName": "Droner",
-    "email": "mjordan@gmail.coms",
-    "addressStreet": "41",
-    "addressCity": "VVG",
-    "addressProvince": "ON",
-    "status": "Full Time",
-    "course": "1",
+    "course": 3,
     "TA": false,
-    "studentNum": 282
+    "studentNum": 261
   }
 ]
