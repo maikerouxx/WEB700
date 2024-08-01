@@ -1,0 +1,261 @@
+studentNum,firstName,lastName,email,addressStreet,addressCity,addressProvince,TA,status,course
+1,Foster,Thorburn,fthorburn0@mySeneca.ca,8 Arapahoe Park,Toronto,ON,TRUE,Full Time,3
+2,Emmy,Trehearne,etrehearne1@mySeneca.ca,66965 Shelley Circle,Toronto,ON,TRUE,Full Time,2
+3,Zonnya,Laytham,zlaytham2@mySeneca.ca,24665 Scoville Parkway,Toronto,ON,TRUE,Full Time,2
+4,Asia,Bollon,abollon3@mySeneca.ca,0464 Mitchell Road,Toronto,ON,TRUE,Full Time,4
+5,Ysabel,Collyns,ycollyns4@mySeneca.ca,529 Grim Lane,Toronto,ON,TRUE,Full Time,6
+6,Tremain,Cassy,tcassy5@mySeneca.ca,068 Bluestem Center,Toronto,ON,TRUE,Full Time,7
+7,Jess,Jago,jjago6@mySeneca.ca,0299 Truax Lane,Toronto,ON,TRUE,Full Time,6
+8,Rodi,Tant,rtant7@mySeneca.ca,7 Clove Circle,Toronto,ON,TRUE,Full Time,5
+9,Henri,Rikard,hrikard8@mySeneca.ca,267 Ryan Trail,Toronto,ON,TRUE,Full Time,1
+10,Beatrisa,Wanne,bwanne9@mySeneca.ca,9 Lotheville Trail,Toronto,ON,TRUE,Full Time,3
+11,Lewes,Tregidgo,ltregidgoa@mySeneca.ca,122 Acker Court,Toronto,ON,TRUE,Full Time,4
+12,Vilma,Chrichton,vchrichtonb@mySeneca.ca,5 Longview Park,Toronto,ON,TRUE,Full Time,5
+13,Penelopa,Grolmann,pgrolmannc@mySeneca.ca,823 Bunker Hill Terrace,Toronto,ON,TRUE,Full Time,3
+14,Brianne,Laslett,blaslettd@mySeneca.ca,04160 Upham Court,Toronto,ON,TRUE,Full Time,3
+15,Elie,Caddens,ecaddense@mySeneca.ca,1 Summit Alley,Toronto,ON,TRUE,Full Time,7
+16,Aileen,Harbisher,aharbisherf@mySeneca.ca,6227 Glacier Hill Street,Toronto,ON,TRUE,Full Time,6
+17,Beverie,Garnsworthy,bgarnsworthyg@mySeneca.ca,33 Mccormick Pass,Toronto,ON,TRUE,Full Time,6
+18,Jo-ann,Wimp,jwimph@mySeneca.ca,43790 Emmet Avenue,Toronto,ON,TRUE,Full Time,5
+19,Ash,Hofler,ahofleri@mySeneca.ca,1 Cody Junction,Toronto,ON,TRUE,Full Time,5
+20,Marnie,Martinho,mmartinhoj@mySeneca.ca,6459 Holmberg Street,Toronto,ON,TRUE,Full Time,1
+21,Rozalie,Dron,rdronk@mySeneca.ca,29843 Luster Terrace,Toronto,ON,TRUE,Full Time,6
+22,Ellette,Emby,eembyl@mySeneca.ca,0615 Mayer Parkway,Toronto,ON,TRUE,Full Time,4
+23,Marquita,Garatty,mgarattym@mySeneca.ca,3955 Hoard Way,Toronto,ON,TRUE,Full Time,3
+24,Bradley,Maric,bmaricn@mySeneca.ca,35 Vidon Avenue,Toronto,ON,TRUE,Full Time,1
+25,Garrott,Turnor,gturnoro@mySeneca.ca,32700 Sunfield Park,Toronto,ON,TRUE,Full Time,2
+26,Clement,Eronie,ceroniep@mySeneca.ca,223 Hovde Point,Toronto,ON,TRUE,Full Time,7
+27,Haley,Stamper,hstamperq@mySeneca.ca,85 Kensington Avenue,Toronto,ON,TRUE,Full Time,6
+28,Shawn,Ramet,srametr@mySeneca.ca,229 Sycamore Junction,Toronto,ON,TRUE,Full Time,4
+29,Hedvig,Bassett,hbassetts@mySeneca.ca,7 Swallow Court,Toronto,ON,TRUE,Full Time,2
+30,Daune,Raffan,draffant@mySeneca.ca,8 Grim Circle,Toronto,ON,TRUE,Full Time,3
+31,Kennie,Casterton,kcasterton0@mySeneca.ca,449 Upham Park,Toronto,ON,FALSE,Full Time,6
+32,Tomkin,Holcroft,tholcroft1@mySeneca.ca,1 Duke Center,Toronto,ON,FALSE,Full Time,1
+33,Daile,Connop,dconnop2@mySeneca.ca,92437 Fremont Hill,Toronto,ON,FALSE,Part Time,2
+34,Prissie,Lambell,plambell3@mySeneca.ca,9053 Reinke Drive,Toronto,ON,FALSE,Part Time,6
+35,Brocky,Demer,bdemer4@mySeneca.ca,3559 School Park,Toronto,ON,FALSE,Part Time,2
+36,Aviva,Blaber,ablaber5@mySeneca.ca,4 Pawling Circle,Toronto,ON,FALSE,Part Time,2
+37,Ike,Gravenall,igravenall6@mySeneca.ca,017 Forster Plaza,Toronto,ON,FALSE,Part Time,7
+38,Rachel,Blumfield,rblumfield7@mySeneca.ca,9772 Cody Road,Toronto,ON,FALSE,Full Time,1
+39,Elissa,Preshous,epreshous8@mySeneca.ca,555 Kim Hill,Toronto,ON,FALSE,Full Time,1
+40,Desiri,Eckert,deckert9@mySeneca.ca,77039 Anhalt Hill,Toronto,ON,FALSE,Part Time,4
+41,Gui,Collocott,gcollocotta@mySeneca.ca,4 Donald Place,Toronto,ON,FALSE,Part Time,2
+42,Ewen,Hubbart,ehubbartb@mySeneca.ca,59 Jana Center,Toronto,ON,FALSE,Part Time,6
+43,Pru,Souster,psousterc@mySeneca.ca,3876 Hoard Street,Toronto,ON,FALSE,Full Time,6
+44,Rhys,Twidale,rtwidaled@mySeneca.ca,83 Leroy Avenue,Toronto,ON,FALSE,Full Time,4
+45,Mycah,Broxup,mbroxupe@mySeneca.ca,85 Amoth Circle,Toronto,ON,FALSE,Part Time,6
+46,Zsa zsa,Iffe,ziffef@mySeneca.ca,5522 Cody Point,Toronto,ON,FALSE,Part Time,5
+47,Enoch,Greenstead,egreensteadg@mySeneca.ca,759 Westridge Trail,Toronto,ON,FALSE,Part Time,6
+48,Frasquito,Reddle,freddleh@mySeneca.ca,0857 Sunnyside Drive,Toronto,ON,FALSE,Part Time,1
+49,Granville,Antosch,gantoschi@mySeneca.ca,5587 Harper Trail,Toronto,ON,FALSE,Part Time,6
+50,Wendall,Bingell,wbingellj@mySeneca.ca,395 Rusk Parkway,Toronto,ON,FALSE,Part Time,4
+51,Serena,Hanbury,shanburyk@mySeneca.ca,10541 Florence Park,Toronto,ON,FALSE,Full Time,3
+52,Annie,Braun,abraunl@mySeneca.ca,9 Delladonna Crossing,Toronto,ON,FALSE,Full Time,2
+53,Goldina,Farres,gfarresm@mySeneca.ca,472 Esch Court,Toronto,ON,FALSE,Full Time,5
+54,Karlen,Keam,kkeamn@mySeneca.ca,9300 Veith Hill,Toronto,ON,FALSE,Full Time,7
+55,Maxie,Lonergan,mlonergano@mySeneca.ca,08 Karstens Trail,Toronto,ON,FALSE,Full Time,2
+56,Virgil,Youle,vyoulep@mySeneca.ca,02 Scofield Way,Toronto,ON,FALSE,Full Time,1
+57,Alexi,Fish,afishq@mySeneca.ca,079 Northwestern Pass,Toronto,ON,FALSE,Full Time,4
+58,Keefe,De Mattia,kdemattiar@mySeneca.ca,54 Moose Plaza,Toronto,ON,FALSE,Full Time,3
+59,Mano,Hooke,mhookes@mySeneca.ca,750 Sutteridge Place,Toronto,ON,FALSE,Full Time,3
+60,Tiffanie,Ferrarotti,tferrarottit@mySeneca.ca,8360 Lerdahl Crossing,Toronto,ON,FALSE,Part Time,2
+61,Valle,Joberne,vjoberneu@mySeneca.ca,885 Sommers Hill,Toronto,ON,FALSE,Full Time,4
+62,Bevon,Elce,belcev@mySeneca.ca,68665 Fieldstone Terrace,Toronto,ON,FALSE,Part Time,6
+63,Mill,Cutill,mcutillw@mySeneca.ca,4333 Corben Place,Toronto,ON,FALSE,Full Time,5
+64,Aurelea,Cleyburn,acleyburnx@mySeneca.ca,2 Schurz Circle,Toronto,ON,FALSE,Part Time,3
+65,Shaina,Lingner,slingnery@mySeneca.ca,8739 International Terrace,Toronto,ON,FALSE,Full Time,6
+66,Nancee,Delicate,ndelicatez@mySeneca.ca,581 Fremont Lane,Toronto,ON,FALSE,Full Time,7
+67,Olenka,Mountfort,omountfort10@mySeneca.ca,45 Crest Line Hill,Toronto,ON,FALSE,Full Time,5
+68,Bianca,Biesty,bbiesty11@mySeneca.ca,9 Mosinee Way,Toronto,ON,FALSE,Part Time,7
+69,Jedediah,Marriner,jmarriner12@mySeneca.ca,941 Union Point,Toronto,ON,FALSE,Full Time,6
+70,Obie,Rubinovici,orubinovici13@mySeneca.ca,4497 Lunder Crossing,Toronto,ON,FALSE,Part Time,1
+71,Brit,Bresson,bbresson14@mySeneca.ca,74 Thierer Street,Toronto,ON,FALSE,Full Time,2
+72,Alberik,Ganing,aganing15@mySeneca.ca,2423 Kropf Road,Toronto,ON,FALSE,Part Time,5
+73,Regina,Inston,rinston16@mySeneca.ca,137 Lien Drive,Toronto,ON,FALSE,Full Time,4
+74,Helenelizabeth,Brosoli,hbrosoli17@mySeneca.ca,79355 Becker Way,Toronto,ON,FALSE,Full Time,2
+75,Rhona,Zute,rzute18@mySeneca.ca,68073 La Follette Alley,Toronto,ON,FALSE,Part Time,3
+76,Tybie,Hullins,thullins19@mySeneca.ca,3 Jay Court,Toronto,ON,FALSE,Full Time,6
+77,Rois,Tilbrook,rtilbrook1a@mySeneca.ca,83225 Dennis Pass,Toronto,ON,FALSE,Part Time,1
+78,Rochell,Di Francesco,rdifrancesco1b@mySeneca.ca,1 Rowland Center,Toronto,ON,FALSE,Part Time,1
+79,Addi,Wield,awield1c@mySeneca.ca,1929 Autumn Leaf Avenue,Toronto,ON,FALSE,Full Time,1
+80,Conrad,Haye,chaye1d@mySeneca.ca,151 Pearson Road,Toronto,ON,FALSE,Full Time,3
+81,Dyana,Moatt,dmoatt1e@mySeneca.ca,808 Morrow Road,Toronto,ON,FALSE,Part Time,4
+82,El,Potte,epotte1f@mySeneca.ca,45 Coleman Road,Toronto,ON,FALSE,Full Time,5
+83,Maurita,Sykora,msykora1g@mySeneca.ca,4 Vahlen Park,Toronto,ON,FALSE,Full Time,6
+84,Wilek,Neligan,wneligan1h@mySeneca.ca,6 Grover Plaza,Toronto,ON,FALSE,Part Time,7
+85,Ulric,Blackborow,ublackborow1i@mySeneca.ca,8210 Center Way,Toronto,ON,FALSE,Part Time,5
+86,Rudolfo,Lohan,rlohan1j@mySeneca.ca,5 Milwaukee Place,Toronto,ON,FALSE,Part Time,2
+87,Samson,Leehane,sleehane1k@mySeneca.ca,2798 Blue Bill Park Terrace,Toronto,ON,FALSE,Full Time,4
+88,Harvey,Gerrill,hgerrill1l@mySeneca.ca,91537 Beilfuss Street,Toronto,ON,FALSE,Part Time,7
+89,Fran,Batterton,fbatterton1m@mySeneca.ca,210 Carpenter Place,Toronto,ON,FALSE,Full Time,5
+90,Suzanne,Stouther,sstouther1n@mySeneca.ca,77 Portage Road,Toronto,ON,FALSE,Full Time,4
+91,Jose,Brizell,jbrizell1o@mySeneca.ca,32894 Steensland Drive,Toronto,ON,FALSE,Part Time,6
+92,Marcus,Gilleson,mgilleson1p@mySeneca.ca,68 Wayridge Alley,Toronto,ON,FALSE,Full Time,4
+93,Shanta,Wille,swille1q@mySeneca.ca,8372 Trailsway Junction,Toronto,ON,FALSE,Full Time,4
+94,Savina,McGillicuddy,smcgillicuddy1r@mySeneca.ca,1604 Coleman Terrace,Toronto,ON,FALSE,Part Time,3
+95,Goldie,Itzcak,gitzcak1s@mySeneca.ca,42 Pierstorff Hill,Toronto,ON,FALSE,Full Time,1
+96,Davey,Campany,dcampany1t@mySeneca.ca,17 Declaration Pass,Toronto,ON,FALSE,Part Time,2
+97,Tina,O'Fallowne,tofallowne1u@mySeneca.ca,9908 Aberg Junction,Toronto,ON,FALSE,Full Time,4
+98,Nanny,Bus,nbus1v@mySeneca.ca,248 Mayer Point,Toronto,ON,FALSE,Part Time,3
+99,Geneva,Prose,gprose1w@mySeneca.ca,28 Fair Oaks Point,Toronto,ON,FALSE,Part Time,3
+100,Tamas,Charley,tcharley1x@mySeneca.ca,320 Macpherson Pass,Toronto,ON,FALSE,Full Time,2
+101,Sheff,Maevela,smaevela1y@mySeneca.ca,9863 Lerdahl Plaza,Toronto,ON,FALSE,Full Time,2
+102,Rayshell,Gravell,rgravell1z@mySeneca.ca,2 Sloan Avenue,Toronto,ON,FALSE,Part Time,1
+103,Francois,Gunby,fgunby20@mySeneca.ca,722 Autumn Leaf Court,Toronto,ON,FALSE,Full Time,5
+104,Cristie,Rentelll,crentelll21@mySeneca.ca,5 Reindahl Crossing,Toronto,ON,FALSE,Part Time,4
+105,Eyde,MacColm,emaccolm22@mySeneca.ca,7 Huxley Trail,Toronto,ON,FALSE,Part Time,2
+106,Adel,Glowinski,aglowinski23@mySeneca.ca,1713 Shoshone Street,Toronto,ON,FALSE,Full Time,3
+107,Ginnifer,Iacovides,giacovides24@mySeneca.ca,7 Mayfield Drive,Toronto,ON,FALSE,Part Time,5
+108,Hester,Mussalli,hmussalli25@mySeneca.ca,0 Del Mar Park,Toronto,ON,FALSE,Full Time,3
+109,Olwen,Melia,omelia26@mySeneca.ca,435 2nd Lane,Toronto,ON,FALSE,Part Time,5
+110,Armando,Tainton,atainton27@mySeneca.ca,5819 Dawn Road,Toronto,ON,FALSE,Part Time,5
+111,Pru,Rodson,prodson28@mySeneca.ca,7865 6th Lane,Toronto,ON,FALSE,Part Time,7
+112,Reinaldos,Baus,rbaus29@mySeneca.ca,3 Fairfield Drive,Toronto,ON,FALSE,Part Time,6
+113,Babita,Ainslee,bainslee2a@mySeneca.ca,7628 Novick Way,Toronto,ON,FALSE,Part Time,3
+114,Cosette,Handes,chandes2b@mySeneca.ca,0080 Troy Road,Toronto,ON,FALSE,Part Time,5
+115,Cristy,Frensche,cfrensche2c@mySeneca.ca,379 Redwing Terrace,Toronto,ON,FALSE,Part Time,6
+116,Nanice,Dunnan,ndunnan2d@mySeneca.ca,70077 Southridge Terrace,Toronto,ON,FALSE,Full Time,1
+117,Rebekah,Mackelworth,rmackelworth2e@mySeneca.ca,189 Loeprich Circle,Toronto,ON,FALSE,Full Time,6
+118,Roscoe,Angrick,rangrick2f@mySeneca.ca,4816 Manley Road,Toronto,ON,FALSE,Full Time,6
+119,Jandy,Trembey,jtrembey2g@mySeneca.ca,575 East Alley,Toronto,ON,FALSE,Full Time,3
+120,Tulley,Algeo,talgeo2h@mySeneca.ca,0599 Mandrake Park,Toronto,ON,FALSE,Part Time,6
+121,Evania,Babbe,ebabbe2i@mySeneca.ca,47314 Maryland Junction,Toronto,ON,FALSE,Part Time,5
+122,Malva,Hosburn,mhosburn2j@mySeneca.ca,8191 Pepper Wood Junction,Toronto,ON,FALSE,Part Time,6
+123,Waneta,Sudron,wsudron2k@mySeneca.ca,8 Northland Park,Toronto,ON,FALSE,Part Time,2
+124,Sabrina,Nabarro,snabarro2l@mySeneca.ca,7 Katie Alley,Toronto,ON,FALSE,Full Time,2
+125,Nicky,Blowne,nblowne2m@mySeneca.ca,46675 Monterey Park,Toronto,ON,FALSE,Part Time,3
+126,Katherina,Kestle,kkestle2n@mySeneca.ca,2549 Weeping Birch Terrace,Toronto,ON,FALSE,Part Time,2
+127,Romola,Rodear,rrodear2o@mySeneca.ca,1744 Mayfield Way,Toronto,ON,FALSE,Full Time,7
+128,Ainslie,Mewton,amewton2p@mySeneca.ca,4165 Shoshone Street,Toronto,ON,FALSE,Part Time,1
+129,Gaylor,Iskowitz,giskowitz2q@mySeneca.ca,781 Clove Parkway,Toronto,ON,FALSE,Part Time,2
+130,Isahella,McGall,imcgall2r@mySeneca.ca,9049 Everett Circle,Toronto,ON,FALSE,Part Time,6
+131,Raffaello,McGibbon,rmcgibbon2s@mySeneca.ca,2461 Hoard Point,Toronto,ON,FALSE,Full Time,6
+132,Bertha,Snoddin,bsnoddin2t@mySeneca.ca,08366 Waubesa Terrace,Toronto,ON,FALSE,Full Time,5
+133,Ambros,Perfili,aperfili2u@mySeneca.ca,15809 Crowley Alley,Toronto,ON,FALSE,Full Time,2
+134,Audrie,Jumel,ajumel2v@mySeneca.ca,36969 Service Terrace,Toronto,ON,FALSE,Part Time,1
+135,Reggi,Iacopini,riacopini2w@mySeneca.ca,06879 Nevada Junction,Toronto,ON,FALSE,Full Time,6
+136,Meris,Patters,mpatters2x@mySeneca.ca,5093 Blaine Terrace,Toronto,ON,FALSE,Part Time,5
+137,Sonnnie,Chudleigh,schudleigh2y@mySeneca.ca,37 Florence Point,Toronto,ON,FALSE,Full Time,1
+138,Dorey,Keegan,dkeegan2z@mySeneca.ca,07 5th Drive,Toronto,ON,FALSE,Full Time,3
+139,Emmy,Dallicoat,edallicoat30@mySeneca.ca,4 Autumn Leaf Junction,Toronto,ON,FALSE,Part Time,5
+140,Nye,Harrild,nharrild31@mySeneca.ca,38 Rowland Parkway,Toronto,ON,FALSE,Full Time,7
+141,Mechelle,Formie,mformie32@mySeneca.ca,94 Dixon Terrace,Toronto,ON,FALSE,Full Time,1
+142,Abie,Welland,awelland33@mySeneca.ca,78589 Hoard Junction,Toronto,ON,FALSE,Part Time,6
+143,Wolf,McGann,wmcgann34@mySeneca.ca,3 Judy Drive,Toronto,ON,FALSE,Full Time,2
+144,Dewey,Skurray,dskurray35@mySeneca.ca,7699 Eagan Parkway,Toronto,ON,FALSE,Full Time,4
+145,Sylvia,Shrigley,sshrigley36@mySeneca.ca,93 Homewood Crossing,Toronto,ON,FALSE,Full Time,5
+146,Roseline,Windress,rwindress37@mySeneca.ca,2 Meadow Ridge Point,Toronto,ON,FALSE,Part Time,3
+147,Homerus,Runnett,hrunnett38@mySeneca.ca,78 Talmadge Alley,Toronto,ON,FALSE,Full Time,3
+148,Vania,Brabbs,vbrabbs39@mySeneca.ca,5093 Main Lane,Toronto,ON,FALSE,Part Time,2
+149,Roxana,Gillitt,rgillitt3a@mySeneca.ca,2 Victoria Terrace,Toronto,ON,FALSE,Full Time,2
+150,Winona,Akroyd,wakroyd3b@mySeneca.ca,36 Morning Court,Toronto,ON,FALSE,Part Time,5
+151,Sampson,Pickworth,spickworth3c@mySeneca.ca,2266 Ridgeway Place,Toronto,ON,FALSE,Part Time,6
+152,Ingram,Enevoldsen,ienevoldsen3d@mySeneca.ca,7 Lighthouse Bay Pass,Toronto,ON,FALSE,Part Time,1
+153,Noellyn,Prebble,nprebble3e@mySeneca.ca,4636 North Trail,Toronto,ON,FALSE,Part Time,5
+154,Carlotta,Raynard,craynard3f@mySeneca.ca,8 Dahle Place,Toronto,ON,FALSE,Full Time,6
+155,Iris,Kubach,ikubach3g@mySeneca.ca,1042 Cody Place,Toronto,ON,FALSE,Part Time,7
+156,Thaine,Saing,tsaing3h@mySeneca.ca,1 Scoville Point,Toronto,ON,FALSE,Full Time,3
+157,Atlanta,Knevet,aknevet3i@mySeneca.ca,5327 Londonderry Street,Toronto,ON,FALSE,Part Time,3
+158,Jerrold,Coolahan,jcoolahan3j@mySeneca.ca,186 School Park,Toronto,ON,FALSE,Part Time,6
+159,Ty,Arran,tarran3k@mySeneca.ca,78641 Fair Oaks Way,Toronto,ON,FALSE,Full Time,4
+160,Amelina,Tabart,atabart3l@mySeneca.ca,59602 Blackbird Crossing,Toronto,ON,FALSE,Part Time,6
+161,Leanna,Frunks,lfrunks3m@mySeneca.ca,6686 Bartillon Crossing,Toronto,ON,FALSE,Full Time,1
+162,Kile,Ludford,kludford3n@mySeneca.ca,43173 Vahlen Way,Toronto,ON,FALSE,Full Time,4
+163,Tiebout,Broderick,tbroderick3o@mySeneca.ca,5595 Jackson Street,Toronto,ON,FALSE,Full Time,6
+164,Bea,MacAllen,bmacallen3p@mySeneca.ca,3247 Surrey Place,Toronto,ON,FALSE,Full Time,1
+165,Giffer,Bodd,gbodd3q@mySeneca.ca,0 Rieder Park,Toronto,ON,FALSE,Part Time,6
+166,Standford,Burras,sburras3r@mySeneca.ca,2 Pearson Crossing,Toronto,ON,FALSE,Full Time,4
+167,Betteanne,Destouche,bdestouche3s@mySeneca.ca,0099 High Crossing Alley,Toronto,ON,FALSE,Full Time,7
+168,Paulie,Burns,pburns3t@mySeneca.ca,9 Lillian Center,Toronto,ON,FALSE,Full Time,7
+169,Urson,Stodd,ustodd3u@mySeneca.ca,6313 Elka Hill,Toronto,ON,FALSE,Full Time,2
+170,Jorey,Bolesworth,jbolesworth3v@mySeneca.ca,474 Jenifer Way,Toronto,ON,FALSE,Part Time,3
+171,Benny,Zute,bzute3w@mySeneca.ca,89991 Iowa Alley,Toronto,ON,FALSE,Part Time,2
+172,Tillie,Depke,tdepke3x@mySeneca.ca,4 Fisk Place,Toronto,ON,FALSE,Part Time,6
+173,Gil,Shallcroff,gshallcroff3y@mySeneca.ca,04413 Muir Hill,Toronto,ON,FALSE,Part Time,3
+174,Dominic,Loughead,dloughead3z@mySeneca.ca,28829 Graedel Alley,Toronto,ON,FALSE,Full Time,6
+175,Sullivan,O' Concannon,soconcannon40@mySeneca.ca,7250 Blackbird Circle,Toronto,ON,FALSE,Full Time,5
+176,Baryram,Clancy,bclancy41@mySeneca.ca,59635 Rowland Junction,Toronto,ON,FALSE,Part Time,3
+177,Brenden,Tompkins,btompkins42@mySeneca.ca,68150 Schmedeman Center,Toronto,ON,FALSE,Full Time,3
+178,Ulrich,Ambrogiotti,uambrogiotti43@mySeneca.ca,924 Loftsgordon Lane,Toronto,ON,FALSE,Part Time,5
+179,Ardene,Bilovus,abilovus44@mySeneca.ca,6606 Sunbrook Lane,Toronto,ON,FALSE,Full Time,7
+180,Dallas,Meedendorpe,dmeedendorpe45@mySeneca.ca,5153 Golf Terrace,Toronto,ON,FALSE,Part Time,3
+181,Tonye,Ogelsby,togelsby46@mySeneca.ca,8 Clyde Gallagher Center,Toronto,ON,FALSE,Full Time,2
+182,Maxwell,Gallamore,mgallamore47@mySeneca.ca,699 Westerfield Parkway,Toronto,ON,FALSE,Part Time,7
+183,Kerry,Pressman,kpressman48@mySeneca.ca,51 Karstens Circle,Toronto,ON,FALSE,Full Time,1
+184,Eugine,Carder,ecarder49@mySeneca.ca,47923 Melvin Drive,Toronto,ON,FALSE,Part Time,2
+185,Herb,Britch,hbritch4a@mySeneca.ca,1523 Gina Park,Toronto,ON,FALSE,Part Time,2
+186,Juan,Barwell,jbarwell4b@mySeneca.ca,46 Ludington Parkway,Toronto,ON,FALSE,Part Time,4
+187,Melva,Jamison,mjamison4c@mySeneca.ca,1 Michigan Court,Toronto,ON,FALSE,Part Time,2
+188,Lodovico,Trippick,ltrippick4d@mySeneca.ca,05162 Cottonwood Street,Toronto,ON,FALSE,Full Time,5
+189,Eolanda,Baitson,ebaitson4e@mySeneca.ca,63 Browning Way,Toronto,ON,FALSE,Part Time,6
+190,Augustine,Sandell,asandell4f@mySeneca.ca,6 Victoria Plaza,Toronto,ON,FALSE,Full Time,6
+191,Kiley,Elecum,kelecum4g@mySeneca.ca,7 Huxley Avenue,Toronto,ON,FALSE,Part Time,5
+192,Pepita,Beels,pbeels4h@mySeneca.ca,6 Buena Vista Place,Toronto,ON,FALSE,Part Time,1
+193,Francesca,Lilleman,flilleman4i@mySeneca.ca,29160 Welch Road,Toronto,ON,FALSE,Part Time,6
+194,Nichol,Tourville,ntourville4j@mySeneca.ca,53647 Mariners Cove Road,Toronto,ON,FALSE,Full Time,2
+195,Tan,Gallaccio,tgallaccio4k@mySeneca.ca,18 Mayfield Park,Toronto,ON,FALSE,Full Time,2
+196,Marlie,Deveraux,mdeveraux4l@mySeneca.ca,4 Warrior Parkway,Toronto,ON,FALSE,Full Time,6
+197,Alissa,Phinn,aphinn4m@mySeneca.ca,8175 Dunning Alley,Toronto,ON,FALSE,Part Time,5
+198,Anya,Yole,ayole4n@mySeneca.ca,166 Graedel Hill,Toronto,ON,FALSE,Full Time,2
+199,Amalita,Covil,acovil4o@mySeneca.ca,2811 Summit Plaza,Toronto,ON,FALSE,Full Time,2
+200,Siouxie,Frank,sfrank4p@mySeneca.ca,40 Saint Paul Pass,Toronto,ON,FALSE,Full Time,6
+201,Lilli,Elston,lelston4q@mySeneca.ca,797 Orin Center,Toronto,ON,FALSE,Part Time,5
+202,Kalindi,Petschel,kpetschel4r@mySeneca.ca,08 David Terrace,Toronto,ON,FALSE,Full Time,3
+203,Bartolemo,Pemberton,bpemberton4s@mySeneca.ca,4 Crownhardt Place,Toronto,ON,FALSE,Full Time,7
+204,Marlene,Taleworth,mtaleworth4t@mySeneca.ca,272 La Follette Junction,Toronto,ON,FALSE,Full Time,1
+205,Jada,Bickerton,jbickerton4u@mySeneca.ca,1286 Jana Plaza,Toronto,ON,FALSE,Full Time,7
+206,Noelani,Pettifer,npettifer4v@mySeneca.ca,03 Lunder Court,Toronto,ON,FALSE,Full Time,2
+207,Pincus,Cundict,pcundict4w@mySeneca.ca,6647 Memorial Court,Toronto,ON,FALSE,Full Time,2
+208,Dalis,Hynde,dhynde4x@mySeneca.ca,98 Eagan Terrace,Toronto,ON,FALSE,Full Time,6
+209,Anissa,Emmerson,aemmerson4y@mySeneca.ca,2050 Maple Parkway,Toronto,ON,FALSE,Full Time,7
+210,Jone,Mergue,jmergue4z@mySeneca.ca,09 Lerdahl Junction,Toronto,ON,FALSE,Part Time,6
+211,Aeriela,Tole,atole50@mySeneca.ca,92 Old Gate Avenue,Toronto,ON,FALSE,Part Time,1
+212,Nanni,Foggarty,nfoggarty51@mySeneca.ca,1 Elka Center,Toronto,ON,FALSE,Full Time,4
+213,Kath,Rielly,krielly52@mySeneca.ca,486 Mcguire Hill,Toronto,ON,FALSE,Full Time,2
+214,Hilda,Crowcher,hcrowcher53@mySeneca.ca,9 Mockingbird Point,Toronto,ON,FALSE,Part Time,5
+215,Lawton,Mussett,lmussett54@mySeneca.ca,8 Larry Plaza,Toronto,ON,FALSE,Part Time,7
+216,Reena,Axten,raxten55@mySeneca.ca,0963 Corben Alley,Toronto,ON,FALSE,Part Time,4
+217,Melesa,Terbrug,mterbrug56@mySeneca.ca,8014 Washington Court,Toronto,ON,FALSE,Full Time,5
+218,Clarinda,Ellam,cellam57@mySeneca.ca,3 Dixon Park,Toronto,ON,FALSE,Full Time,7
+219,Ellyn,Longland,elongland58@mySeneca.ca,99288 Carberry Terrace,Toronto,ON,FALSE,Part Time,7
+220,Ferdie,Zannini,fzannini59@mySeneca.ca,346 Messerschmidt Lane,Toronto,ON,FALSE,Full Time,3
+221,Oliver,Bedding,obedding5a@mySeneca.ca,9 Amoth Parkway,Toronto,ON,FALSE,Full Time,5
+222,Latrina,Jimes,ljimes5b@mySeneca.ca,62 Oak Pass,Toronto,ON,FALSE,Part Time,5
+223,Kellen,Jessel,kjessel5c@mySeneca.ca,2354 Morningstar Trail,Toronto,ON,FALSE,Full Time,7
+224,Catherina,Greguoli,cgreguoli5d@mySeneca.ca,7 Lakewood Avenue,Toronto,ON,FALSE,Full Time,5
+225,Clarabelle,Kuhne,ckuhne5e@mySeneca.ca,8 7th Park,Toronto,ON,FALSE,Full Time,7
+226,Gwenny,Vousden,gvousden5f@mySeneca.ca,4 Schlimgen Lane,Toronto,ON,FALSE,Full Time,6
+227,Nancey,Venturoli,nventuroli5g@mySeneca.ca,5753 Westridge Way,Toronto,ON,FALSE,Part Time,6
+228,Tammie,Myner,tmyner5h@mySeneca.ca,91 Dovetail Lane,Toronto,ON,FALSE,Full Time,2
+229,Erny,Dury,edury5i@mySeneca.ca,4798 Warbler Center,Toronto,ON,FALSE,Part Time,1
+230,Sam,Reichelt,sreichelt5j@mySeneca.ca,0 Superior Court,Toronto,ON,FALSE,Part Time,7
+231,Selina,Goldby,sgoldby5k@mySeneca.ca,846 Eggendart Avenue,Toronto,ON,FALSE,Part Time,3
+232,Dieter,Hampshaw,dhampshaw5l@mySeneca.ca,2 3rd Street,Toronto,ON,FALSE,Full Time,2
+233,Karee,Branche,kbranche5m@mySeneca.ca,86 Little Fleur Crossing,Toronto,ON,FALSE,Full Time,2
+234,Rhonda,Swatradge,rswatradge5n@mySeneca.ca,13593 Beilfuss Circle,Toronto,ON,FALSE,Full Time,2
+235,Nicolea,Vizard,nvizard5o@mySeneca.ca,39 Gale Trail,Toronto,ON,FALSE,Part Time,5
+236,Dre,Ranner,dranner5p@mySeneca.ca,20073 Crownhardt Hill,Toronto,ON,FALSE,Full Time,5
+237,Adrianna,Cristofori,acristofori5q@mySeneca.ca,2 Vermont Place,Toronto,ON,FALSE,Full Time,4
+238,Danyette,Clericoates,dclericoates5r@mySeneca.ca,2 David Junction,Toronto,ON,FALSE,Full Time,2
+239,Everett,Klugel,eklugel5s@mySeneca.ca,640 Meadow Valley Place,Toronto,ON,FALSE,Full Time,7
+240,Athena,Kyteley,akyteley5t@mySeneca.ca,96633 Fieldstone Park,Toronto,ON,FALSE,Full Time,3
+241,Bald,Brixey,bbrixey5u@mySeneca.ca,05 Crescent Oaks Road,Toronto,ON,FALSE,Part Time,1
+242,Aeriell,Tingley,atingley5v@mySeneca.ca,2 Mayer Drive,Toronto,ON,FALSE,Part Time,6
+243,Michail,Doige,mdoige5w@mySeneca.ca,7 Pierstorff Center,Toronto,ON,FALSE,Full Time,2
+244,Aura,Esmead,aesmead5x@mySeneca.ca,24232 Wayridge Trail,Toronto,ON,FALSE,Full Time,6
+245,Ernie,Birth,ebirth5y@mySeneca.ca,15060 Meadow Ridge Drive,Toronto,ON,FALSE,Part Time,4
+246,Stanwood,Phillips,sphillips5z@mySeneca.ca,68 Johnson Parkway,Toronto,ON,FALSE,Full Time,2
+247,Raquela,Sign,rsign60@mySeneca.ca,74 High Crossing Avenue,Toronto,ON,FALSE,Full Time,7
+248,Christian,Tarbet,ctarbet61@mySeneca.ca,7 Debra Alley,Toronto,ON,FALSE,Part Time,6
+249,Cassy,Colquyte,ccolquyte62@mySeneca.ca,7745 Sachs Road,Toronto,ON,FALSE,Full Time,7
+250,Gale,Davidowsky,gdavidowsky63@mySeneca.ca,1 Alpine Place,Toronto,ON,FALSE,Full Time,3
+251,Sascha,Barhems,sbarhems64@mySeneca.ca,9708 Dixon Alley,Toronto,ON,FALSE,Part Time,1
+252,Cristionna,Beeching,cbeeching65@mySeneca.ca,7865 Sullivan Center,Toronto,ON,FALSE,Full Time,2
+253,Binny,Casely,bcasely66@mySeneca.ca,16 Clemons Plaza,Toronto,ON,FALSE,Full Time,3
+254,Gnni,Giovannacc@i,ggiovannacci67@mySeneca.ca,729 Parkside Road,Toronto,ON,FALSE,Full Time,3
+255,Ignaz,Saintpierre,isaintpierre68@mySeneca.ca,3190 Fairfield Road,Toronto,ON,FALSE,Full Time,2
+256,Penny,Souza,psouza69@mySeneca.ca,8557 Lindbergh Hill,Toronto,ON,FALSE,Full Time,4
+257,Lothaire,Aveling,laveling6a@mySeneca.ca,60 Kennedy Place,Toronto,ON,FALSE,Part Time,6
+258,Abramo,Cecil,acecil6b@mySeneca.ca,920 Anthes Parkway,Toronto,ON,FALSE,Full Time,2
+259,Tessy,Verny,tverny6c@mySeneca.ca,8142 School Plaza,Toronto,ON,FALSE,Part Time,6
+260,Jojo,Tschierasche,jtschierasche6d@mySeneca.ca,0560 Di Loreto Crossing,Toronto,ON,FALSE,Part Time,6
