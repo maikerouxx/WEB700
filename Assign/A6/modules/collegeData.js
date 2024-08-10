@@ -23,18 +23,11 @@ const sequelize = new Sequelize(
       port: process.env.DB_PORT || 5432, // Database port (default 5432)
       dialect: 'postgres',
       dialectOptions: {
-        ssl: {
-            require: true,
-            rejectUnauthorized: false
-        }
-    },
-    pool: {
-        max: 5,
-        min: 0,
-        idle: 10000
-    },
-    logging: console.log
-});
+        ssl: { rejectUnauthorized: false } // SSL option for secure connection
+      },
+      query: { raw: true }
+    }
+  );
 
 
   sequelize.authenticate()
