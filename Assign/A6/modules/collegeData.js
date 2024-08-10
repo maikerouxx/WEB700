@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 
-var sequelize = new Sequelize('web700A6', 'web700A6_owner', 'dKEkY6wpN7WB', {     
+/*var sequelize = new Sequelize('web700A6', 'web700A6_owner', 'dKEkY6wpN7WB', {     
     host: 'ep-frosty-heart-a5saryhq.us-east-2.aws.neon.tech',     
     dialect: 'postgres',     
     port: 5432,     
@@ -10,7 +10,23 @@ var sequelize = new Sequelize('web700A6', 'web700A6_owner', 'dKEkY6wpN7WB', {
     }, 
     query: { raw: true } 
 });
+*/
 
+
+const sequelize = new Sequelize(
+    process.env.DB_NAME,        // Database name
+    process.env.DB_USER,        // Database user
+    process.env.DB_PASSWORD,    // Database password
+    {
+      host: process.env.DB_HOST,     // Database host
+      port: process.env.DB_PORT || 5432, // Database port (default 5432)
+      dialect: 'postgres',
+      dialectOptions: {
+        ssl: { rejectUnauthorized: false } // SSL option for secure connection
+      },
+      query: { raw: true }
+    }
+  );
 
 
 
@@ -265,5 +281,5 @@ function deleteStudentByNum(studentNum) {
 
 
 
-module.exports = { initialize, getAllStudents, getCourses, getStudentsByCourse, getStudentByNum, addStudent, getCourseById, updateStudent, addCourse, updateCourse, deleteCourseById, deleteStudentByNum };
+module.exports = { initialize, sequelize, getAllStudents, getCourses, getStudentsByCourse, getStudentByNum, addStudent, getCourseById, updateStudent, addCourse, updateCourse, deleteCourseById, deleteStudentByNum };
 
