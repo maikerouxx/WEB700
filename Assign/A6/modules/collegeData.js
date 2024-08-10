@@ -1,21 +1,16 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-const sequelize = new Sequelize(
-    process.env.DB_NAME,        // Database name
-    process.env.DB_USER,        // Database user
-    process.env.DB_PASSWORD,    // Database password
-    {
-      host: process.env.DB_HOST,     // Database host
-      port: process.env.DB_PORT || 5432, // Database port (default 5432)
-      dialect: 'postgres',
-      dialectOptions: {
-        ssl: { rejectUnauthorized: false } // SSL option for secure connection
-      },
-      query: { raw: true }
-    }
-  );
-
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'postgres',
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    },
+    query: { raw: true }
+});
 
   sequelize.authenticate()
   .then(() => {
@@ -104,12 +99,8 @@ function getStudentsByCourse(course) {
 }
 
 function getStudentByNum(num) {
-    return new Promise((resolve, reject) => {
-        Student.findAll({
-            where: { studentNum: num }
-        })
-        .then(data => resolve(data[0]))
-        .catch(() => reject("no results returned"));
+    return Student.findOne({
+        where: { studentNum: num }
     });
 }
 
@@ -122,12 +113,8 @@ function getCourses() {
 }
 
 function getCourseById(id) {
-    return new Promise((resolve, reject) => {
-        Course.findAll({
-            where: { courseId: id }
-        })
-        .then(data => resolve(data[0]))
-        .catch(() => reject("no results returned"));
+    return Course.findOne({
+        where: { courseId: id }
     });
 }
 
