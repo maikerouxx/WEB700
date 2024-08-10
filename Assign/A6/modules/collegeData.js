@@ -23,13 +23,27 @@ const sequelize = new Sequelize(
       port: process.env.DB_PORT || 5432, // Database port (default 5432)
       dialect: 'postgres',
       dialectOptions: {
-        ssl: { rejectUnauthorized: false } // SSL option for secure connection
-      },
-      query: { raw: true }
-    }
-  );
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    },
+    pool: {
+        max: 5,
+        min: 0,
+        idle: 10000
+    },
+    logging: console.log
+});
 
 
+  sequelize.authenticate()
+  .then(() => {
+      console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+      console.error('Unable to connect to the database:', err);
+  });  
 
 const Student = sequelize.define('student', {
     studentNum: {
