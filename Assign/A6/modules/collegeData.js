@@ -1,18 +1,5 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
-/*
-var sequelize = new Sequelize('web700A6', 'web700A6_owner', 'dKEkY6wpN7WB', {     
-    host: 'ep-frosty-heart-a5saryhq.us-east-2.aws.neon.tech',     
-    dialect: 'postgresql',     
-    port: 5432,     
-    dialectOptions: { 
-        ssl: { rejectUnauthorized: false } 
-    }, 
-    query: { raw: true } 
-});
-
-*/
-
 
 const sequelize = new Sequelize(
     process.env.DB_NAME,        // Database name
